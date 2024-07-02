@@ -1,0 +1,87 @@
+
+body {
+    font-family: Arial, sans-serif;
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0,0,0,0.15);
+}
+/* Header code starts  */
+.header a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Brush Script MT';
+    font-size: 21px;
+    font-weight: 600;
+}
+.header{
+    height: 5%;
+    width: 185px;
+    position: absolute;
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    background-image: linear-gradient(to top right,maroon,crimson,pink);
+    align-items: center;
+    border-radius: 2.5vh;
+}
+#home{
+    height: 5vh;
+    border-top-left-radius: 2.5vh;
+    border-bottom-left-radius: 2.5vh;
+    padding-left: 8px;
+
+    transition-duration: 0.2s;
+    display: flex;
+    align-items: center;
+}
+#home:hover{
+    background-color: rgb(253,252,221);
+    border: 0;
+    border-radius: 2.5vh;
+    padding-right: 8px;
+}
+#education{
+    height: 5vh;
+    border: 0px;
+    padding-right: 2px;
+    padding-left:4px;
+    transition-duration: 0.2s;
+    display: flex;
+    align-items: center;
+}
+#education:hover{
+    background-color: rgb(253,252,221);
+    border-radius: 2.5vh;
+    padding-right: 8px;
+    border:0;
+    padding-left: 8px;
+}
+#skills{
+    height: 5vh;
+    border-top-right-radius: 2.5vh;
+    border-bottom-right-radius: 2.5vh;
+    border: 0px;
+    padding-right: 8px;
+    padding-left: 0;
+    transition-duration: 0.2s;
+    display: flex;
+    align-items: center;
+}
+#skills:hover{
+    background-color: rgb(253,252,221);
+    border-radius: 2.5vh;
+    padding-left: 8px;
+    border: 0;
+}
+/* Header code ends */
+
+.main{
+    height: calc(95%-20px);
+    width: 100%;
+    background-color: aqua;
+}
