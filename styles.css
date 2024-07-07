@@ -1,67 +1,66 @@
-
 body {
     font-family: Arial, sans-serif;
-	margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
     display: flex;
-    justify-content: center;
-    background-color: rgb(0,0,0,0.15);
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(11, 35, 11);
+    height: 200vh;
 }
+
 /* Header code starts  */
-.header a{
+.header a {
     text-decoration: none;
     color: black;
     font-family: 'Brush Script MT';
     font-size: 21px;
     font-weight: 600;
 }
-.header{
+.header {
     height: 5%;
     width: 185px;
-    position: absolute;
     display: flex;
-    margin: 10px;
+    position: absolute;
     justify-content: space-between;
-    background-image: linear-gradient(to top right,maroon,crimson,pink);
+    background-image: linear-gradient(to top right, maroon, crimson, pink);
     align-items: center;
     border-radius: 2.5vh;
+    margin: 10px;
 }
-#home{
+#home {
     height: 5vh;
     border-top-left-radius: 2.5vh;
     border-bottom-left-radius: 2.5vh;
     padding-left: 8px;
-
     transition-duration: 0.2s;
     display: flex;
     align-items: center;
 }
-#home:hover{
-    background-color: rgb(253,252,221);
+#home:hover {
+    background-image: linear-gradient(yellow,orange,red);
     border: 0;
     border-radius: 2.5vh;
     padding-right: 8px;
 }
-#education{
+#education {
     height: 5vh;
     border: 0px;
     padding-right: 2px;
-    padding-left:4px;
+    padding-left: 4px;
     transition-duration: 0.2s;
     display: flex;
     align-items: center;
 }
-#education:hover{
-    background-color: rgb(253,252,221);
+#education:hover {
+    background-image: linear-gradient(yellow,orange,red);
     border-radius: 2.5vh;
     padding-right: 8px;
-    border:0;
+    border: 0;
     padding-left: 8px;
 }
-#skills{
+#skills {
     height: 5vh;
     border-top-right-radius: 2.5vh;
     border-bottom-right-radius: 2.5vh;
@@ -72,16 +71,229 @@ body{
     display: flex;
     align-items: center;
 }
-#skills:hover{
-    background-color: rgb(253,252,221);
+#skills:hover {
+    background-image: linear-gradient(yellow,orange,red);
     border-radius: 2.5vh;
     padding-left: 8px;
     border: 0;
 }
 /* Header code ends */
 
-.main{
-    height: calc(95%-20px);
+.hero{
+    height: 100vh;
     width: 100%;
-    background-color: aqua;
+    display: flex;
+    margin-top: 50px; /* Adjust based on header height */
+}
+.right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .main{
+        height: calc(95% - 20px);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .left{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .intro{
+        margin-top: 50px;
+    }
+}
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color:#C9E4FF;
+    font-size: 2rem;
+    font-weight: 900;
+}
+@media screen and (min-width: 600px){
+    .intro{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 10px;
+        color:#C9E4FF;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+}
+span{
+    color: rgb(220, 87, 109);
+    font-weight: 700;
+    font-size: 4rem;
+}
+img{
+    margin-top: 50px;
+    height: 60vh;
+    width: 45vw;
+    border-radius: 150px;
+    border: 2px solid crimson;
+}
+.about{
+    height: 50%;
+    width:100%;
+    text-align: center;
+    color: pink;
+    font-weight: bold;
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+}
+#about{
+    font-size: 2rem;
+    color: #C9E4FF;
+}
+@media screen and (min-width: 800px){
+    img{
+        height: 70vh;
+        width: 30vw;
+    }
+}
+.projects{
+    height: 115vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(11, 35, 11);
+}
+#projHead{
+    width: 20vw;
+    height: 10vh;
+    margin-top: 5px;
+    border-radius: 5vh;
+    font-family: 'Brush Script MT';
+    font-size: 2rem;
+    font-weight: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top right, maroon, crimson, pink);
+}
+.projCell a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.projCell{
+    height: 20vh;
+    width: 70vh;
+    margin: 10px;
+    background-image: linear-gradient(lightblue,blue,aqua);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projCell:hover{
+    background-image: linear-gradient(yellow,orange,red);
+}
+.footer{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: #3586FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_icon a{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.social_icon a:hover{
+    transform: translateY(-10px);
+}
+.footer .social_icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.footer .social_icon li{
+    list-style: none;
+}
+.footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+.footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+.footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+.footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+.footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
 }
