@@ -191,6 +191,7 @@ img{
 }
 #projHead{
     width: 20vw;
+    min-width: 120px;
     height: 10vh;
     margin-top: 5px;
     border-radius: 5vh;
